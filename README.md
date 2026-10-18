@@ -1,6 +1,6 @@
-# Bruhhhhh
+# Just breathe.
 
-Mashrafee's minimal interactive portfolio: black background, a gradient top line, and floating GPU, Rust, and MLH objects.
+Minimal interactive portfolio: transparent puppy header icon, a typing “Just breathe.” headline, “I just do stuff.” introduction, and floating GPU, Rust, and MLH objects with large readable titles.
 
 ## Run locally
 
@@ -27,3 +27,5 @@ In **Settings → Pages**, choose **Deploy from a branch**, select **main** and 
 - Relative paths for GitHub Pages project hosting
 
 Artwork was generated using OpenAI's built-in image generation tool. Motion uses CSS and JavaScript over rendered images, rather than WebGL models. Brand imagery is illustrative. No analytics or backend is included.
+
+`assets/dog.png` is a transparent cutout generated from the supplied puppy photograph using the built-in image generation tool. Prompt: remove the entire background, preserve the white puppy's identity, face, fur, seated pose and paws, and use clean alpha transparency with no added objects. Typing and floating motion respect reduced-motion preferences.

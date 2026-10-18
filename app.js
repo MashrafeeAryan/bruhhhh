@@ -33,12 +33,11 @@ function closePanel() {
   floating.append(sprite);
   visual.append(element('span', 'halo'), floating);
   const caption = element('span', 'caption');
-  const label = String(index + 1).padStart(2, '0') + ' / ' + item.category;
   const title = element('span', 'title', item.name);
   const arrow = element('span', '', '↗');
   arrow.setAttribute('aria-hidden', 'true');
   title.append(arrow);
-  caption.append(element('span', 'index', label), title, element('span', 'description', item.tagline));
+  caption.append(title);
   card.append(visual, caption);
   cards.push(card);
   grid.append(card);
@@ -56,7 +55,6 @@ function closePanel() {
     if (card.getAttribute('aria-expanded') === 'true') return closePanel();
     active = card;
     cards.forEach(other => other.setAttribute('aria-expanded', String(other === card)));
-    document.querySelector('#detail-label').textContent = label;
     document.querySelector('#detail-title').textContent = item.title;
     document.querySelector('#detail-copy').textContent = item.copy;
     const link = document.querySelector('#detail-link');
@@ -71,3 +69,32 @@ document.querySelector('.close').addEventListener('click', closePanel);
 document.addEventListener('keydown', event => {
   if(event.key === 'Escape' && !panel.hidden) closePanel();
 });
+
+// Keep a stable accessible heading while the visual text types and erases.
+const typedText = document.querySelector('#typed-text');
+const motionPreference = matchMedia('(prefers-reduced-motion: reduce)');
+const phrase = 'Just breathe.';
+let typingTimer;
+let character = 0;
+let erasing = false;
+function typeNext() {
+  if (motionPreference.matches) return;
+  character += erasing ? -1 : 1;
+  typedText.textContent = phrase.slice(0, character);
+  let delay = erasing ? 65 : 125;
+  if (character === phrase.length) { erasing = true; delay = 3200; }
+  else if (character === 0) { erasing = false; delay = 650; }
+  typingTimer = setTimeout(typeNext, delay);
+}
+function updateTyping() {
+  clearTimeout(typingTimer);
+  typedText.textContent = phrase;
+  if (!motionPreference.matches) {
+    character = 0;
+    erasing = false;
+    typedText.textContent = '';
+    typingTimer = setTimeout(typeNext, 400);
+  }
+}
+motionPreference.addEventListener('change', updateTyping);
+updateTyping();
