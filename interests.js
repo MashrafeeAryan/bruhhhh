@@ -1,0 +1,7 @@
+// Add more entries here. Set image: 'assets/your-image.png' for a separate
+// transparent image; omit spritePosition when using an individual asset.
+window.portfolioInterests = [
+  { id: 'gpu', name: 'GPU Computing', category: 'COMPUTE', tagline: 'Big ideas. Parallel possibilities.', alt: 'NVIDIA graphics card', accent: '137,238,98', spritePosition: '0%', title: 'More possibilities, in parallel.', copy: 'A space for exploring GPU computing — from graphics to the kind of problems that benefit from thousands of threads working together.', url: 'https://developer.nvidia.com/', link: 'Explore NVIDIA Developer' },
+  { id: 'rust', name: 'Rust', category: 'CREATE', tagline: 'A little crab. A lot of potential.', alt: 'Orange Rust crab mascot', accent: '255,129,71', spritePosition: '50%', title: 'Small crab. Big ideas.', copy: 'Fast tools, thoughtful systems, and the satisfaction of getting things right. A space for exploring what can be built with Rust.', url: 'https://www.rust-lang.org/learn', link: 'Explore Rust' },
+  { id: 'mlh', name: 'MLH', category: 'CONNECT', tagline: 'Build together. Figure it out.', alt: 'Colorful MLH badge', accent: '100,137,255', spritePosition: '100%', title: 'Good things happen when we build together.', copy: 'Hackathons bring ideas, people, and a little time pressure together. A space for the joy of making something and learning along the way.', url: 'https://mlh.io/', link: 'Explore Major League Hacking' }
+];
