@@ -6,13 +6,13 @@ A static portfolio with a transparent puppy header, typing headline, and seven f
 
 - GPU Computing: NVIDIA MatX, AMD Iris, CUDA Neural Network Engine, RunOnGPU
 - C++: CUDA Neural Network Engine, mdspan tensor views, Parquet compression
-- AI & ML: Microsoft × Cornell Break Through Tech / Pulse2BP, Chexsa, neural-network learning
+- AI & ML: Microsoft × Cornell Break Through Tech / Pulse2BP and neural-network learning
 - Rust: CrabShell
 - MLH: Apache Arrow / Parquet contributions
-- Projects: CampCrunch, RunOnGPU, Chexsa
+- Chexsa AI: browser agent, voice mode, and ongoing Windows desktop integration
 - Research: ASU contact-angle work and the RSC review publication
 
-The seven pages contain 20 entries, including projects featured in more than one relevant section. LeetCode practice links to the public practice repository in the footer.
+The seven pages contain 19 entries, including projects featured in more than one relevant section. LeetCode practice links to the public practice repository in the footer.
 
 ## Edit and build
 
@@ -71,3 +71,7 @@ New icon prompts requested a centered individual object, ample clear padding, re
 `node check.mjs` verifies local links, generated-page structure, asset references, and required case-study fields. Desktop and 390px mobile checks covered section navigation, case-study expansion, and NVIDIA/AMD filtering. The site has no analytics, account system, or backend.
 
 - `assets/cpp.png`: blue beveled 3D hexagonal C++ badge on alpha transparency, generated with the built-in image generation tool.
+
+The generic Projects section has been replaced by Chexsa AI. Old `/projects/` links redirect to `/chexsa/`. CampCrunch is no longer a homepage section; RunOnGPU remains under GPU Computing.
+
+- `assets/chexsa.png`: white ceramic AI robot head with lavender eyes on alpha transparency, generated with the built-in image generation tool.

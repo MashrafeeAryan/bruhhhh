@@ -4,7 +4,8 @@ import {fileURLToPath} from 'node:url';
 const root=path.dirname(fileURLToPath(import.meta.url));
 const data=JSON.parse(await readFile(path.join(root,'portfolio.json'),'utf8'));
 let count=0;
-for(const file of ['index.html',...data.sections.map(s=>s.id+'/index.html')]){
+const pageFiles=['index.html',...data.sections.map(s=>s.id+'/index.html'),'projects/index.html'];
+for(const file of pageFiles){
  const html=await readFile(path.join(root,file),'utf8');
  for(const [,url] of html.matchAll(/(?:href|src)="([^"]+)"/g)){
   if(/^(https?:|mailto:|#)/.test(url))continue;
@@ -26,4 +27,4 @@ for(const section of data.sections){
  }
  if(section.image)await stat(path.join(root,'assets',section.image));
 }
-console.log(`Verified ${data.sections.length+1} static pages, ${count} local links, and all case-study fields.`);
+console.log(`Verified ${pageFiles.length} static pages, ${count} local links, and all case-study fields.`);
