@@ -7,7 +7,7 @@ A static portfolio with a transparent puppy header, typing headline, and six flo
 - GPU Computing: NVIDIA MatX, AMD Iris, CUDA Neural Network Engine, RunOnGPU
 - AI & ML: Microsoft × Cornell Break Through Tech / Pulse2BP, Chexsa, neural-network learning
 - Rust: CrabShell
-- MLH / Arrow: Apache Arrow / Parquet contributions
+- MLH: Apache Arrow / Parquet contributions
 - Projects: CampCrunch, RunOnGPU, Chexsa
 - Research: ASU contact-angle work and the RSC review publication
 
