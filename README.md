@@ -1,17 +1,18 @@
 # Just breathe.
 
-A static portfolio with a transparent puppy header, typing headline, and six floating objects linking to dedicated work pages.
+A static portfolio with a transparent puppy header, typing headline, and seven floating objects linking to dedicated work pages.
 
 ## Pages
 
 - GPU Computing: NVIDIA MatX, AMD Iris, CUDA Neural Network Engine, RunOnGPU
+- C++: CUDA Neural Network Engine, mdspan tensor views, Parquet compression
 - AI & ML: Microsoft × Cornell Break Through Tech / Pulse2BP, Chexsa, neural-network learning
 - Rust: CrabShell
 - MLH: Apache Arrow / Parquet contributions
 - Projects: CampCrunch, RunOnGPU, Chexsa
 - Research: ASU contact-angle work and the RSC review publication
 
-The six pages contain 17 entries, including projects featured in more than one relevant section. LeetCode practice links to the public practice repository in the footer.
+The seven pages contain 20 entries, including projects featured in more than one relevant section. LeetCode practice links to the public practice repository in the footer.
 
 ## Edit and build
 
@@ -22,7 +23,7 @@ node build.mjs
 node check.mjs
 ```
 
-The generator writes the homepage and six directory index pages. Commit the generated HTML along with the source. No dependencies or build service are needed for hosting. `app.js` adds typing, pointer tilt, and GPU-page filters. Navigation, case studies, and links work without JavaScript.
+The generator writes the homepage and seven directory index pages. Commit the generated HTML along with the source. No dependencies or build service are needed for hosting. `app.js` adds typing, pointer tilt, and GPU-page filters. Navigation, case studies, and links work without JavaScript.
 
 To preview locally:
 
@@ -68,3 +69,5 @@ New icon prompts requested a centered individual object, ample clear padding, re
 ## Validation
 
 `node check.mjs` verifies local links, generated-page structure, asset references, and required case-study fields. Desktop and 390px mobile checks covered section navigation, case-study expansion, and NVIDIA/AMD filtering. The site has no analytics, account system, or backend.
+
+- `assets/cpp.png`: blue beveled 3D hexagonal C++ badge on alpha transparency, generated with the built-in image generation tool.

@@ -109,3 +109,5 @@ footer{border-top:1px solid var(--line);padding:28px 0 36px;display:flex;justify
 footer{flex-wrap:wrap}
 @media(max-width:900px){.case-grid{grid-template-columns:1fr}.domain-hero{gap:24px;grid-template-columns:minmax(0,1.5fr) minmax(160px,1fr)}.hero-object .visual{height:200px}.domain-hero h1{font-size:54px}.case-visual pre{font-size:23px}}
 @media(max-width:560px){.domain-hero{grid-template-columns:1fr;padding:24px 0 32px;gap:8px}.domain-hero h1{font-size:46px;letter-spacing:-2px}.domain-hero p{font-size:20px}.hero-object{justify-self:center;width:230px}.hero-object .visual{height:210px}.section-nav{gap:8px 20px;margin-bottom:24px}.section-nav a{font-size:17px}.case-grid{gap:24px}.case-content{padding:22px}.case-meta{flex-wrap:wrap;font-size:16px}.case-card h2{font-size:28px}.case-visual{height:190px;padding:22px}.case-visual pre{font-size:21px}.back-link{font-size:17px}.next-section{font-size:25px;margin-top:40px}.filters button{padding:10px 17px}}
+
+.object.cpp .float{width:86%}

@@ -26,4 +26,4 @@ for(const section of data.sections){
  }
  if(section.image)await stat(path.join(root,'assets',section.image));
 }
-console.log(`Verified 7 static pages, ${count} local links, and all case-study fields.`);
+console.log(`Verified ${data.sections.length+1} static pages, ${count} local links, and all case-study fields.`);
